@@ -1,16 +1,65 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+:root {
+  --fs-h1: 4.5rem;
+  --fs-h2: 3.5rem;
+  --fs-h3: 3rem;
+  --fs-h4: 2.5rem;
+  --fw-p: 700;
+  --clr-primary1: #1627c2;
+  --clr-info-1: #000000;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+body {
+  background-image: url("https://wallpaperaccess.com/full/1128300.jpg");
+  background-size: auto;
+  background-repeat: space;
+  background-attachment: fixed;
+  font-family: "Noto Sans", sans-serif;
+}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body img {
+  animation-name: my-background;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes my-background {
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
+
+.app {
+  text-align: center;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+  color: #bbb;
+  text-shadow: #105 3px 4px 3px;
+}
+h4 {
+  font-size: var(--fs-h4);
+  color: #333;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: var(--fs-h3);
+}
+.tours {
+  text-align: center;
 }
 
 .App-header {
@@ -24,15 +73,110 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.underline {
+  border-bottom: solid 4px var(--clr-primary1);
+  width: 20%;
+  position: absolute;
+  left: 40%;
+  top: 8rem;
+}
+.tour-price {
+  font-size: 1.5rem;
+  color: var(--clr-info-1);
+  margin-top: 4.2rem;
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+.tour {
+  display: grid;
+  grid-template-columns: repeat(autoFit, minMax(300px, 1fr));
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footer {
+  position: relative;
+  background-color: aliceblue;
+  background-image: linear-gradient(45deg, #f0f, #1f1);
+  display: block;
+  max-width: 60%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 5%;
+  box-shadow: #aaa 1px 1px 1px, #ccc 1px 1px 1px;
+  margin-top: 3rem;
+}
+.tour img {
+  width: 100%;
+  transition: transform 2s;
+}
+
+.tour img:hover {
+  width: 100%;
+  transform: scale(1.2);
+}
+
+.tour p {
+  font-weight: var(--fw-p);
+  color: #005;
+  margin: 1rem;
+}
+
+.trip-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-shrink: 3;
+}
+
+.refresh-button,
+.delete-button {
+  width: 30%;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  border: solid 2px var(--clr-primary1);
+  border-radius: 7px;
+  background-color: beige;
+  font-family: "Noto Sans";
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.refresh-button:hover,
+.delete-button:hover {
+  background-color: var(--clr-primary1);
+  color: #fff;
+  box-shadow: #000 1px 0.5px 0.4px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    max-width: 70%;
+    position: relative;
   }
-  to {
-    transform: rotate(360deg);
+  .delete-button {
+    width: 100%;
+    margin: auto;
   }
+  .footer {
+    width: 100%;
+    border-radius: 2%;
+    margin: 0.5rem;
+    position: relative;
+    left: 12%;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
+.read-more {
+  color: var(--clr-primary1);
+  font-size: 1.1rem;
+  background-color: unset;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  padding: 0px 10px;
 }
