@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/lolly-tours/static/css/main.e1c98682.chunk.css",
+    "main.js": "/lolly-tours/static/js/main.9d1e6042.chunk.js",
+    "main.js.map": "/lolly-tours/static/js/main.9d1e6042.chunk.js.map",
+    "runtime-main.js": "/lolly-tours/static/js/runtime-main.1440fa3f.js",
+    "runtime-main.js.map": "/lolly-tours/static/js/runtime-main.1440fa3f.js.map",
+    "static/js/2.573895a4.chunk.js": "/lolly-tours/static/js/2.573895a4.chunk.js",
+    "static/js/2.573895a4.chunk.js.map": "/lolly-tours/static/js/2.573895a4.chunk.js.map",
+    "static/js/3.459e4c78.chunk.js": "/lolly-tours/static/js/3.459e4c78.chunk.js",
+    "static/js/3.459e4c78.chunk.js.map": "/lolly-tours/static/js/3.459e4c78.chunk.js.map",
+    "index.html": "/lolly-tours/index.html",
+    "static/css/main.e1c98682.chunk.css.map": "/lolly-tours/static/css/main.e1c98682.chunk.css.map",
+    "static/js/2.573895a4.chunk.js.LICENSE.txt": "/lolly-tours/static/js/2.573895a4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1440fa3f.js",
+    "static/js/2.573895a4.chunk.js",
+    "static/css/main.e1c98682.chunk.css",
+    "static/js/main.9d1e6042.chunk.js"
+  ]
+}
